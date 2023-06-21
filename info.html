@@ -27,6 +27,11 @@ header{
     padding: 1rem 5rem;
     display: flex;
 }
+.log1{
+    padding: 1rem 5rem;
+    display: flex;
+    
+}
 #logo{
     border-radius: 100%;
     height: 4rem;
@@ -116,13 +121,79 @@ main{
     cursor: pointer;
 }
 
+
+
+
+/* responsiveness */
+@media only screen and (max-width:1450px){
+    *{
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: .1rem;
+        padding: .1rem;
+        border-radius: 1rem;
+    }
+    body{
+        margin: 0.1rem;
+        padding: 0.1rem;
+    }
+    main{
+        margin: .1rem;
+        padding: .1rem;
+        border-radius: 1rem;
+    }
+    .navigation{
+        
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .log{
+        flex-direction: column;
+    }
+    .containers{
+        flex-direction: column;
+    }
+    .footercontents{
+        
+        flex-direction: column;
+    }
+    .log1{
+        flex-direction: row;
+    }
+    #em{
+        display: none;
+    }
+    #im{
+        display: none;
+        
+    }
+    #int{
+        margin: .1rem;
+    }
+    .herosection{
+        border-radius: 1rem;
+        padding: .1rem;
+    }
+    #im{
+        display: none;
+    }
+    .guff{
+        margin: .1rem;
+        padding: .1rem;
+    }
+    #em{
+        display: none;
+    }
+}
+
     </style>
 </head>
 <body>
     <header>
         <nav>
             <div class="navigation">
-                <div class="log">
+                <div class="log1">
                     <img id="logo" src="./psclog.jpeg" alt="logo">
                     <p id="logodetail">Nepal Engineering Sewa</p>
                 </div>
@@ -152,13 +223,13 @@ main{
                  <p>We firmly believe that access to quality study material should not be a barrier to academic success. That's why we have made it our mission to offer comprehensive and reliable notes at absolutely no cost.</p><br>
                    <p>We aim to level the playing field by making valuable educational resources accessible to all. By availing our free notes, you can confidently prepare for your exams, knowing that you have reliable study material to support your learning. We are committed to empowering students and enabling them to achieve their academic goals through our platform.</p> <br>
                    <p>Join us on this journey and unlock your full potential!</p></div>
-            <div class="content"><img src="./intro.jpeg" alt="img"></div>
+            <div class="content" id="im"><img src="./intro.jpeg" alt="img"></div>
         </div>
     </main>
     <footer>
         <div class="footercontents">
             <div class="fot">&copy; all rights reserved</div>
-            <div class="fot"><a href="https://mail.google.com/mail/u/0/?fbclid=IwAR3ZcMmtA4l00OdrzUpuqnkVxPKxypFYKa5PdiJm_1XAQDYx0q8X-Pltd-4#inbox?compose=DmwnWsCSnNTjDgSTgPFQWKNkbnLpTQdjVHntNzRsTzvTRPCsTfNMNmKzqXgGhZVvZkztXPCHtvwQ"><i>email:</i>engineeringsewapsc@gmail.com</a></div>
+            <div class="fot" id="em"><a href="https://mail.google.com/mail/u/0/?fbclid=IwAR3ZcMmtA4l00OdrzUpuqnkVxPKxypFYKa5PdiJm_1XAQDYx0q8X-Pltd-4#inbox?compose=DmwnWsCSnNTjDgSTgPFQWKNkbnLpTQdjVHntNzRsTzvTRPCsTfNMNmKzqXgGhZVvZkztXPCHtvwQ"><i>email:</i>engineeringsewapsc@gmail.com</a></div>
             <div class="fot"><a href="https://www.facebook.com/profile.php?id=100092716204870">facebook</a></button></div>
             <div class="fot">980-3990020</div>
         </div>

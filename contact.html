@@ -32,7 +32,10 @@
             padding: 1rem 5rem;
             display: flex;
         }
-
+        .log1{
+            padding: 1rem 7rem;
+            display: flex;
+        }
         #logo {
             border-radius: 100%;
             height: 4rem;
@@ -140,6 +143,75 @@
         .fot>a:hover {
             cursor: pointer;
         }
+
+
+
+
+
+/* responsiveness */
+@media only screen and (max-width:1450px){
+    *{
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: .1rem;
+        padding: .1rem;
+        border-radius: 1rem;
+    }
+    body{
+        margin: 0.1rem;
+        padding: 0.1rem;
+    }
+    main{
+        margin: .1rem;
+        padding: .1rem;
+        border-radius: 1rem;
+    }
+    .navigation{
+        
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .log{
+        flex-direction: column;
+    }
+    .containers{
+        flex-direction: column;
+    }
+    .footercontents{
+        
+        flex-direction: column;
+    }
+    .log1{
+        flex-direction: row;
+    }
+    #em{
+        display: none;
+    }
+    .contact{
+        box-sizing: border-box;
+        border-radius: 1rem;
+        max-width: 100%;
+        flex-direction: column;
+        font-size: 1rem;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .details{
+        box-sizing: border-box;
+        max-width: 100%;
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .feedback{
+        box-sizing: border-box;
+        max-width: 100%;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+}
     </style>
 </head>
 
@@ -147,7 +219,7 @@
     <header>
         <nav>
             <div class="navigation">
-                <div class="log">
+                <div class="log1">
                     <img id="logo" src="./psclog.jpeg" alt="logo">
                     <p id="logodetail">Nepal Engineering Sewa</p>
                 </div>
@@ -198,7 +270,7 @@
     <footer>
         <div class="footercontents">
             <div class="fot">&copy; all rights reserved</div>
-            <div class="fot"><a
+            <div class="fot" id="em"><a
                     href="https://mail.google.com/mail/u/0/?fbclid=IwAR3ZcMmtA4l00OdrzUpuqnkVxPKxypFYKa5PdiJm_1XAQDYx0q8X-Pltd-4#inbox?compose=DmwnWsCSnNTjDgSTgPFQWKNkbnLpTQdjVHntNzRsTzvTRPCsTfNMNmKzqXgGhZVvZkztXPCHtvwQ"><i>email:</i>engineeringsewapsc@gmail.com</a>
             </div>
             <div class="fot"><a href="https://www.facebook.com/profile.php?id=100092716204870">facebook</a></button>

@@ -20,6 +20,10 @@ header{
     padding: 1rem 4rem;
     display: flex;
 }
+.log1{
+    padding: 1rem 4rem;
+    display: flex;
+}
 #logo{
     height: 4rem;
     width: 4rem;
@@ -177,3 +181,57 @@ header{
     cursor: pointer;
 }
 
+
+
+/* responsiveness */
+@media only screen and (max-width:1450px){
+    *{
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: .1rem;
+        padding: .1rem;
+        border-radius: 1rem;
+    }
+    body{
+        margin: 0.1rem;
+        padding: 0.1rem;
+    }
+    main{
+        margin: .1rem;
+        padding: .1rem;
+        border-radius: 1rem;
+    }
+    .navigation{
+        
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .log{
+        flex-direction: column;
+    }
+    .containers{
+        flex-direction: column;
+    }
+    .footercontents{
+        
+        flex-direction: column;
+    }
+    .log1{
+        flex-direction: row;
+    }
+    #em{
+        display: none;
+    }
+    #im{
+        display: none;
+        
+    }
+    #int{
+        margin: .1rem;
+    }
+    .herosection{
+        border-radius: 1rem;
+        padding: .1rem;
+    }
+}
